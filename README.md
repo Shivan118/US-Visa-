@@ -8,4 +8,4 @@ git clone   url copy
 ```
 ```
 
-This file edited by Mukul Singh in Github Url
+This is file edited by Mukul Singh in Github Url
