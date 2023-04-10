@@ -2,4 +2,7 @@ pandas
 numpy 
 flask 
 scikit-learn
+dill  
+PyYAML
+imblearn
 -e .

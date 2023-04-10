@@ -1,5 +1,21 @@
 from collections import namedtuple
 
 DataIngestionArtifact = namedtuple("DataIngestionArtifact",
-                                    ['train_file_path','test_filepath','is_ingested','message'])
+['train_file_path','test_filepath','is_ingested','message'])
+
+
+DataValidationArtifact = namedtuple("DataValidationArtifact",
+['schema_file_path','is_validated','message'])
                                     
+DataTransformationArtifact = namedtuple('DataTransformationArtifact',
+['message','is_transformed','transformed_train_dir','transformed_test_dir','preprocessed_object_file_name']) 
+
+ModelTrainerArtifact = namedtuple('ModelTrainerArtifact',
+['is_trained','message','trained_model_file_path','train_f1','test_f1','train_accuracy','test_accuracy','model_accuracy'])
+
+
+ModelEvaluationArtifact = namedtuple('ModelEvaluationArtifact',['is_model_accepted','evaluated_model_path'])
+
+ModelPusherArtifact = namedtuple('ModelPusherArtifact',['is_model_pusher','export_model_file_path'])
+
+

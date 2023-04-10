@@ -1,10 +1,7 @@
-from visa.entity.config_entity import DataIngestionConfig
-from visa.entity.artifact_entity import DataIngestionArtifact
-from visa.config.configuration import Configuration
-import os ,sys
+import os 
 from visa.logger import logging
 from visa.pipeline.pipeline import Pipeline
-from visa.exception import CustomException
+
 
 def main():
     try:
